@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-03-02
+
+### Fixed
+
+- Declare `logging` capability on McpServer so `sendLoggingMessage()` and SSE notifications work correctly
+- Use custom `whatsapp/*` method names for event notifications instead of the reserved `notifications/message` logging method, which requires the logging capability and was causing silent failures
+
 ## [1.1.0] - 2026-02-28
 
 ### Added

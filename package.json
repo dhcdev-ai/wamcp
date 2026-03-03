@@ -1,6 +1,6 @@
 {
   "name": "wa-mcp",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "WhatsApp MCP server — expose WhatsApp as discoverable tools, resources, and notifications for AI agents",
   "type": "module",
   "main": "dist/index.js",

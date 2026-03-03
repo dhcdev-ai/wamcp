@@ -37,10 +37,17 @@ export function createMcpServer(
   instanceManager: InstanceManager,
   messageQueue: MessageQueue,
 ): McpServer {
-  const server = new McpServer({
-    name: SERVER_NAME,
-    version: VERSION,
-  });
+  const server = new McpServer(
+    {
+      name: SERVER_NAME,
+      version: VERSION,
+    },
+    {
+      capabilities: {
+        logging: {},
+      },
+    },
+  );
 
   // Register tools
   registerInstanceTools(server, instanceManager, messageQueue);

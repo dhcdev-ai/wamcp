@@ -55,9 +55,9 @@ export function registerEventNotifications(
 
       void Promise.resolve(
         server.server.notification({
-          method: "notifications/message",
+          method,
           params: {
-            _meta: { notificationType: method },
+            instanceId,
             ...(payload as unknown as Record<string, unknown>),
           },
         }),
